@@ -4,12 +4,11 @@
 		<title>Fancify Shamcify</title>
 
 		<!-- link to your script file here -->
-		 <script>
-			src="fancifymytext.js"
-		 </script>
+		 <script
+			src="fancifymytext.js" defer>
+		</script>
 		
 	</head>
-
 	<body>
 		<h1>Fancify my Text</h1>
 
@@ -19,23 +18,28 @@
 			}
 		</style>
 
-			<label style="font-size: 20px;">Text</label>
-			<br>
+		<!-- Your UI controls go here -->
+		<label style="font-size: 20px;">Text</label>
 			<p>
-				<textarea type="text" id="userInput" name="userInput" rows="4" cols="30">
-				</textarea>
-			</p>	
+				<textarea 
+					type="text" 
+					id="userInput" 
+					name="userInput" 
+					rows="4" 
+					cols="30"
+					placeholder="Text..."></textarea>
+			</p>
+
 			<label style="font-size: 20px;">Fancify</label>
+
 			<p>
 				<button>Bigger!</button>
-				<input type="radio" name="radio"/>
+				<input type="radio" id="fancyShmancyButton" name="radio"/>
 				<label for="radio">FancyShmancy</label>
-				<input type="radio" name="radio"/>
+				<input type="radio" id="boringBettyButton" name="radio"/>
 				<label for="radio">BoringBetty</label>
 			<br>
+				<button id="moo">Moo</button>
 			</p>
-			
-		<!-- Your UI controls go here -->
-		
 	</body>
 </html>
